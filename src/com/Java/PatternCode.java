@@ -10,6 +10,8 @@ public static void main(String[] args) {
 	NoPattern(4);
 	NumPattern(4);
 	FloydTringle(4);
+	nPattern(4);
+	Peramid(4);
 }
 /*Square pattern 
 
@@ -133,7 +135,76 @@ static void FloydTringle(int n) {
 	System.out.println();
 	}
 }
+/*
+ * 1 1 1 1
+     2 2 2
+       3 3
+         4
+ */
+static void nPattern(int n) {
+for(int i=0;i<n;i++) {
+for(int j=0;j<i;j++) {
+System.out.print(" ");
 }
+for(int j=0;j<n-i;j++) {
+System.out.print(i+1);
+}
+System.out.println();
+}
+}
+/*
+ *    1
+    1 2 1
+  1 2 3 2 1
+1 2 3 4 3 2 1
+ */
+static void Peramid(int n) {
+for(int i=1;i<=n;i++) {
+for(int j=1;j<=n-i;j++) {
+	System.out.print(" ");
+}
+for(int j=1;j<=i;j++) {
+System.out.print(j);
+}
+for(int j=i-1;j>=1;j--) {
+System.out.print(j);
+}
+System.out.println();
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
